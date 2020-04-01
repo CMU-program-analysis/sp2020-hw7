@@ -33,7 +33,7 @@ def signed_4(x,y):
   ##### PROGRAM END   #####
 
   # y must be nonnegative
-  current_VC = And(current_VC, Int('y4') < 0)
+  current_VC = And(current_VC, Int('y5') < 0)
 
   # you can print your constraint in SMT-LIB format by uncommenting the following:
   # print(pp(current_VC))
