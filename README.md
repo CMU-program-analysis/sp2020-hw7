@@ -94,9 +94,9 @@ code has this set up for you already: on each iteration of the loop, there is a
 variable for `y` at the beginning of the loop, and during the loop. You need to
 encode the correct VCGen only using `fresh_y` and `previous_y`.
 
-Note the check condition (line 36) checks the value of `y4`, which is declared
-`Int('y4')` (and not its own variable `y4`) since `y4` is the final `fresh_y`
-produced in the loop. Note that `Int('y4')` can be used anywhere in your VC
-instead of a dedicated variable `y4`. This is important for adding the VC Gen in
+Note the check condition (line 36) checks the value of `y5`, which is declared
+`Int('y5')` (and not its own variable `y5`) since `y5` is the final `fresh_y`
+produced in the loop. Note that `Int('y5')` can be used anywhere in your VC
+instead of a dedicated variable `y5`. This is important for adding the VC Gen in
 the `else` branch at line 31: think carefully about which symbolic variables for
 `y` the statement `y = y` should refer to.
